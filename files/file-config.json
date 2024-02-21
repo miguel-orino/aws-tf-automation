@@ -1,0 +1,27 @@
+{
+    "agent": {
+            "run_as_user": "root"
+    },
+"logs": {
+            "logs_collected": {
+                    "files": {
+                            "collect_list": [
+                                    {
+                                            "file_path": "/usr/local/openresty/nginx/logs/access.log",
+                                            "log_group_class": "STANDARD",
+                                            "log_group_name": "NginxLog",
+                                            "log_stream_name": "access.log.{instance_id}",
+                                            "retention_in_days": 1
+                                    },
+                                    {
+                                            "file_path": "/usr/local/openresty/nginx/logs/error.log",
+                                            "log_group_class": "STANDARD",
+                                            "log_group_name": "NginxLog",
+                                            "log_stream_name": "error.log.{instance_id}",
+                                            "retention_in_days": 1
+                                    }
+                            ]
+                    }
+            }
+    }
+}
