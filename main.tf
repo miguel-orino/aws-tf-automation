@@ -8,7 +8,7 @@ terraform {
 
   required_version = ">= 1.2.0"
 
-  #setup for terraform cloud
+  #setup for terraform cloud automation
   cloud {
     organization = "FinalMix"
 
